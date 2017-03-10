@@ -1,0 +1,47 @@
+/*
+Color From Original Site
+Lighter Green #d9f2d9
+Middle Green #779200
+Darker Green #27512f
+*/
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  padding: 0;
+}
+
+/* Header Navigation */
+.navbar {
+    width: 100%;
+  background: #d9f2d9 !important;
+}
+
+.navLogo {
+    display: inline-block;
+}
+
+.navBrandText {
+    display: inline;
+}
+
+/* Main Body */
+
+/* Footer */
+.footer {
+  position: absolute;
+  bottom: 0;
+  height: auto;
+  background-color: #27512f !important;
+  padding: 1em 1em .5em;
+  margin:0;
+}
+
+.footer p {
+  text-align: center;
+  color: #fff;
+}
