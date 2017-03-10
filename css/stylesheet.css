@@ -9,10 +9,8 @@ html {
   position: relative;
   min-height: 100%;
 }
-
 body {
   margin-bottom: 60px;
-  padding: 0;
 }
 
 /* Header Navigation */
@@ -35,13 +33,13 @@ body {
 .footer {
   position: absolute;
   bottom: 0;
+  width: 100%;
   height: auto;
   background-color: #27512f !important;
-  padding: 1em 1em .5em;
-  margin:0;
+  padding: 20px 0;
 }
 
 .footer p {
-  text-align: center;
-  color: #fff;
+  color:#fff;
+  font-size:16px;
 }
