@@ -1,3 +1,8 @@
+@font-face {
+    font-family: sansita;
+    src: url(sansation_light.woff);
+}
+
 /*
 Color From Original Site
 Lighter Green #d9f2d9
@@ -19,7 +24,7 @@ body {
     width: 100%;
   height:70px;
   margin:0 !important;
-  background: #d9f2d9 !important;
+  background:#69F0AE /*#d9f2d9*/ !important;
 }
 
 .navbar-brand {
@@ -35,6 +40,7 @@ body {
     display: inline;
   font-size: 30px;
   text-shadow: 1px 1px #d3d3d3;
+  font-family: sansita;
 }
 
 .fb-widget {
@@ -42,6 +48,42 @@ body {
 }
 
 /* Main Body */
+.center-div{
+  display:block;
+  margin:0 auto;
+}
+
+#hero{
+  background:red;
+}
+
+.hero-img {
+  width:100%;
+  height:100%;
+  display:inline-block;
+}
+
+.arrow-div{
+  position:absolute;
+  margin-top:30%;
+  width:95%;
+}
+
+.arrow{
+  color:#fff;
+  background: #000;
+  width:50px;
+  height:50px;
+  z-index: 1;
+}
+
+#left-arrow{
+  float:left;
+}
+
+#right-arrow{
+  float:right;
+}
 
 /* Footer */
 .footer {
@@ -57,4 +99,3 @@ body {
   color:#fff;
   font-size:16px;
 }
-
