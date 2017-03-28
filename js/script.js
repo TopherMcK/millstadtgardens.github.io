@@ -1,4 +1,5 @@
 // Replace the slide position img name with desired image
+// make sure to keep 'img/'
 var Imgs = {
   slideOne : "img/n_g_facade.jpg",
   slideTwo : "img/img1.jpg",
@@ -11,6 +12,10 @@ var HeroText = {
   slideTwo : "Mum-s the word!",
   slideThree : "Yo' Mum-a"
 };
+// I think this is a fairly straight forward, simple
+// method to update these portions via direct text, but tell me if
+// there is a different way you'd prefer. Also, I can
+// always just make an easy drag and drop for you.
 
 $(document).ready(function() {
   heroImgSizer();
