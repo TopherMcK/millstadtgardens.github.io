@@ -50,6 +50,22 @@ body {
   font-family: sansita;
 }
 
+.icon-bar{
+  background:#fff!important;
+}
+
+.nav-li {
+  color:#fff!important;
+}
+
+.nav-a{
+  color:#fff!important;
+}
+
+.nav-a:hover{
+  color:#d3d3d3!important;
+}
+
 .main-div {
   padding-top: 10px;
 }
