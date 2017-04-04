@@ -1,101 +1,266 @@
 @font-face {
-    font-family: sansita;
-    src: url(sansation_light.woff);
+  font-family: sansita;
+  src: url(sansation_light.woff);
+}
+@font-face {
+  font-family:BalloBhaina;
+  src: url(BalooBhaina-Regular.ttf)
 }
 
-/*
-Color From Original Site
-Lighter Green #d9f2d9
-Middle Green #779200
-Darker Green #27512f
-*/
+#body {
+  min-height: 400px;
+  margin-bottom: 220px;
+  clear: both;
+}
 
 html {
   position: relative;
   min-height: 100%;
 }
+
 body {
   margin-bottom: 60px;
 }
 
+
 /* Header Navigation */
 
 .navbar {
-    width: 100%;
-  height:70px;
-  margin:0 !important;
-  background:#69F0AE /*#d9f2d9*/ !important;
+  width: 100%;
+  height: 70px;
+  padding-left: 20px;
+  margin: 0 !important;
+  background: #54992C !important;
+  box-shadow: 0.2px 0.5px 2px #bdbdbd;
 }
 
 .navbar-brand {
-  width:auto !important;
+  width: auto !important;
 }
 
 .navLogo {
-    display: inline!important;
+  display: inline!important;
 }
 
 .navBrandText {
-  color:#fff;
-    display: inline;
+  color: #fff;
+  display: inline;
   font-size: 30px;
   text-shadow: 1px 1px #d3d3d3;
   font-family: sansita;
 }
 
-.fb-widget {
-  float:right;
+.icon-bar{
+  background:#fff!important;
 }
 
-/* Main Body */
-.center-div{
+.nav-li {
+  color:#fff!important;
+}
+
+.nav-a{
+  color:#fff!important;
+}
+
+.nav-a:hover{
+  color:#d3d3d3!important;
+}
+
+.main-div {
+  padding-top: 10px;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: 0 auto;
+  box-shadow: 0.3px 0.6px 3px #bdbdbd;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  text-decoration: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+}
+
+
+/* Caption text */
+
+.text {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: inline-box;
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 28px 12px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.active:hover {
+  background-color: #717171;
+}
+
+.fader {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
+}
+
+/* Action Div */
+#actionDiv {
+  text-align: center;
   display:block;
   margin:0 auto;
+  font-size: 20px;
+  margin-bottom: 50px;
+  background: #f5f5f5;
+  padding-top:4%;
+  padding-bottom:2%;
+  box-shadow: 0.3px 0.6px 3px #eee;
 }
 
-#hero{
-  background:red;
+.fb-follow {
+  background-color: #3b5998;
+  color: #fff;
+  width: 100px;
+  height: 50px;
+  text-decoration: none;
+  padding: 5px 10px 0 7px;
+  border-radius: 4px;
 }
 
-.hero-img {
-  width:100%;
+fb-follow:hover {
+  color: #fff!important;
+}
+
+.follow-f {
+  display: inline-block;
+  height: 20px;
+  padding: 0px 4px 0px 8px;
+  background: #fff;
+  color: #3b5998;
+  font-size:22px;
+  font-weight: bold;
+  border-radius: 3px;
+  line-height: 1.2;
+}
+
+.follow-text {
+  display: inline-block;
+  font-size: 18px;
+  padding-left:3px;
+}
+
+.loc-btn {
+  font-size: 18px!important;
+}
+
+/* Home Page Article */
+#home-article {
+  display:block;
+  margin-bottom: 50px;;
+  text-align: center;
+  color:#424242;
+}
+
+/*
+* Location Page-specific styling
+*/
+#locImgDiv {
+  display:block;
+  margin: 0 auto;
+  box-shadow: 0.3px 0.6px 3px #bdbdbd;
+  padding: 0;
+}
+
+#mapDiv{
+  display:block!important;
+  margin: 0 auto;
+}
+
+#map{
   height:100%;
-  display:inline-block;
 }
 
-.arrow-div{
-  position:absolute;
-  margin-top:30%;
-  width:95%;
-}
-
-.arrow{
-  color:#fff;
-  background: #000;
-  width:50px;
-  height:50px;
-  z-index: 1;
-}
-
-#left-arrow{
-  float:left;
-}
-
-#right-arrow{
-  float:right;
-}
-
-/* Footer */
+/*
+* Footer
+*/
 .footer {
   position: absolute;
   bottom: 0;
-  width: 100%;
+  left: 0;
   height: auto;
-  background-color: #27512f !important;
+  background-color: #424242 !important;
+  width: 100%;
   padding: 20px 0;
 }
 
 .footer p {
-  color:#fff;
-  font-size:16px;
+  color: #fff;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+  footer p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px;
+  }
 }
